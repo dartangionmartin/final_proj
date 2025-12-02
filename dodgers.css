@@ -1,0 +1,412 @@
+/* styles.css - History of the Los Angeles Dodgers */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --dodger: #005A9C;
+  --white: #FFFFFF;
+  --silver: #C0C0C0;
+  --dark: #2F2F2F;
+  --accent: #E41B17;
+  --max-width: 1100px;
+  --nav-h: 70px;
+}
+body {
+  font-family: Verdana, Arial, sans-serif;
+  color: var(--dark);
+  background: var(--white);
+  line-height: 1.5;
+  padding-top: var(--nav-h);
+}
+a { color: var(--dodger); }
+a:hover { color: var(--accent); }
+
+header.site-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: var(--nav-h);
+  background: linear-gradient(90deg, var(--dodger), #0071c2);
+  color: #fff;
+  z-index: 1000;
+}
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  height: 100%;
+}
+.logo-text {
+  font-family: "Roboto Slab", Georgia, serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+nav.main-nav a {
+  margin-left: 0.75rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.35rem 0.55rem;
+  border-radius: 999px;
+}
+nav.main-nav a:hover {
+  background: rgba(255,255,255,0.12);
+}
+
+main.page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem;
+}
+.layout-grid {
+  display: grid;
+  grid-template-columns: 230px 1fr 260px;
+  gap: 1rem;
+}
+aside.left-nav, aside.right-rail {
+  background: #f7f9fc;
+  border-radius: 10px;
+  padding: 0.9rem;
+  border: 1px solid #e1e5ee;
+  font-size: 0.9rem;
+}
+aside.left-nav h3, aside.right-rail h3 {
+  margin-bottom: 0.4rem;
+  color: var(--dodger);
+  font-size: 1rem;
+}
+aside.left-nav ul { list-style: none; padding-left: 0; }
+aside.left-nav li { margin-bottom: 0.3rem; }
+aside.left-nav a {
+  text-decoration: none;
+  color: var(--dark);
+  font-size: 0.9rem;
+}
+aside.left-nav a:hover { color: var(--dodger); }
+
+section.main-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.hero-text { flex: 2 1 260px; }
+.hero-text h1 {
+  font-family: "Roboto Slab", Georgia, serif;
+  font-size: 1.9rem;
+  color: var(--dodger);
+  margin-bottom: 0.3rem;
+}
+.hero-text p.lead {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 0.4rem;
+}
+.hero-img {
+  flex: 1 1 230px;
+}
+.hero-img img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+h2, h3 {
+  font-family: "Roboto Slab", Georgia, serif;
+  color: var(--dodger);
+  margin-top: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+ul { margin-left: 1.1rem; margin-top: 0.3rem; }
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  border: none;
+  background: var(--dodger);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+}
+.btn:hover { background: #00457a; }
+
+table.data {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+table.data th, table.data td {
+  border: 1px solid #dde2eb;
+  padding: 0.4rem 0.45rem;
+  text-align: left;
+}
+table.data th {
+  background: #eef3fb;
+  font-weight: 700;
+}
+table.data caption {
+  text-align: left;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  color: var(--dodger);
+}
+
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 0.7rem;
+  margin-top: 0.5rem;
+}
+.player-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 0.6rem;
+  border: 1px solid #e1e5ee;
+}
+.player-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.4rem;
+}
+.player-card h3 {
+  margin-top: 0;
+  font-size: 1rem;
+}
+.player-card p {
+  font-size: 0.9rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.7rem;
+  margin-top: 0.5rem;
+}
+.gallery-grid img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  height: 130px;
+}
+
+form label {
+  display: block;
+  margin-top: 0.6rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 0.4rem 0.45rem;
+  border-radius: 6px;
+  border: 1px solid #cbd2e0;
+  margin-top: 0.2rem;
+  font-size: 0.9rem;
+}
+form textarea { resize: vertical; }
+
+footer.site-footer {
+  margin-top: 1rem;
+  padding: 0.9rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+  border-top: 1px solid #e1e5ee;
+}
+
+/* 11/25/25 D.Martin NEW: Dropdown navigation container & submenu */
+nav.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nav-item {
+  position: relative;
+  margin-left: 0.75rem;
+}
+
+.nav-item .submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  background: #ffffff;
+  color: var(--dark);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  padding: 0.3rem 0;
+  list-style: none;
+  display: none;
+  z-index: 2000;
+}
+
+.nav-item .submenu a {
+  display: block;
+  padding: 0.35rem 0.7rem;
+  color: var(--dark);
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.nav-item .submenu a:hover {
+  background: #eef3fb;
+  color: var(--dodger);
+}
+
+.nav-item.has-submenu:hover .submenu,
+.nav-item.has-submenu:focus-within .submenu {
+  display: block;
+}
+
+/* 11/25/25 D.Martin NEW: Breadcrumb styling (TABLE 0 #11) */
+nav.breadcrumb {
+  font-size: 0.85rem;
+  margin: 0.3rem 0 0.5rem 0;
+  color: #555;
+}
+nav.breadcrumb a {
+  color: var(--dodger);
+  text-decoration: none;
+}
+nav.breadcrumb a:hover { text-decoration: underline; }
+
+/* 11/25/25 D.Martin NEW: Social links in footer (TABLE 0 #22) */
+.footer-social {
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+}
+.footer-social a {
+  margin-right: 0.5rem;
+}
+
+/* 11/25/25 D.Martin NEW: Site search (TABLE 0 #28) */
+.site-search {
+  margin-top: 0.6rem;
+}
+.site-search input[type="text"] {
+  width: 70%;
+  max-width: 260px;
+}
+
+/* 11/25/25 D.Martin NEW: Image rotation feature area (TABLE 0 #31) */
+.feature-rotation {
+  margin: 0.8rem 0;
+  border-radius: 10px;
+  padding: 0.6rem;
+  border: 1px solid #e1e5ee;
+}
+.feature-rotation img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* 11/26/25 D.Martin NEW (TABLE 0 #21): Thumbnail hover enlarge with caption */
+.hover-gallery {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.thumb-box {
+  position: relative;
+  display: inline-block;
+}
+
+.thumb {
+  width: 140px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  transition: transform 0.2s ease;
+}
+
+.thumb:hover {
+  transform: scale(1.03);
+}
+
+.large-view {
+  position: absolute;
+  top: 0;
+  left: 160px;
+  width: 300px;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.large-view img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.large-view figcaption {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #444;
+  margin-top: 0.3rem;
+  background: #fff;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.thumb-box:hover .large-view {
+  opacity: 1;
+}
+
+/* 11/25/25 D.Martin NEW: Responsive layout */
+@media (max-width: 950px) {
+  .layout-grid {
+    grid-template-columns: 1fr 260px;
+  }
+  aside.left-nav {
+    display: none;
+  }
+}
+@media (max-width: 720px) {
+  header.site-header {
+    height: auto;
+  }
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.4rem 0.75rem;
+  }
+  nav.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.3rem;
+  }
+  main.page {
+    padding: 0.6rem;
+    padding-top: 1rem;
+  }
+  .layout-grid {
+    grid-template-columns: 1fr;
+  }
+  aside.right-rail {
+    margin-top: 0.6rem;
+  }
+}

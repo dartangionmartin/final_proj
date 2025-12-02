@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Site Map — Dodgers History Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Site map listing all Dodgers history project pages with purple page numbers.">
+<link rel="stylesheet" href="dodgers.css">
+<link rel="stylesheet" href="css/print.css" media="print">
+<script src="js/main.js" defer></script>
+</head>
+<body>
+
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <div class="logo-text">History of the Los Angeles Dodgers</div>
+    <nav class="main-nav" aria-label="Main">
+  <a href="index.html">Home</a>
+  <a href="brooklyn.html">Team Origins</a>
+  <a href="move_to_la.html">Move to LA</a>
+  <a href="milestones.html">Milestones</a>
+  <div class="nav-item has-submenu">
+    <a href="players.html">Players</a>
+    <ul class="submenu">
+      <li><a href="players.html#jackie">Jackie Robinson</a></li>
+      <li><a href="players.html#koufax">Sandy Koufax</a></li>
+      <li><a href="players.html#fernando">Fernando Valenzuela</a></li>
+      <li><a href="players.html#kershaw">Clayton Kershaw</a></li>
+    </ul>
+  </div>
+  <a href="gallery.html">Gallery</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="faq.html">FAQ</a>
+  <a href="events.html">Events</a>
+  <a href="site_map.html">Site Map</a>
+</nav>
+  </div>
+</header>
+
+<main class="page">
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="index.html">Home</a> › Site Map
+  </nav>
+
+
+<section class="main-card">
+  <h1>Site Map</h1>
+  <p>This site map corresponds to the page numbers used in TABLE 0. Numbers are shown in purple as required.</p>
+  <ol style="color:#5a3cff;">
+    <li><strong>0. Home</strong> — index.html</li>
+    <li>1. Team Origins (Brooklyn Era) — brooklyn.html</li>
+    <li>2. Move to Los Angeles — move_to_la.html</li>
+    <li>3. Championships &amp; Milestones — milestones.html</li>
+    <li>4. Legendary Players — players.html</li>
+    <li>5. Photo &amp; Video Gallery — gallery.html</li>
+    <li>6. This Day in Dodgers History — daily_history.html</li>
+    <li>7. Contact &amp; Fan Zone — contact.html</li>
+    <li>8. About (Vision, Mission, Values) — about.html</li>
+    <li>9. FAQ — faq.html</li>
+    <li>10. Events &amp; Timeline — events.html</li>
+    <li>11. Site Map — site_map.html</li>
+  </ol>
+
+  <!-- 11/25/25 D.Martin NEW: QR code block (TABLE 0 #16) -->
+  <h2>Scan to Visit This Site</h2>
+  <p>Use the QR code below to open this website quickly on a mobile device.</p>
+  <p></p>
+  <img src="qr_dodgers_site.png"
+       alt="QR code linking to History of the Los Angeles Dodgers website"
+       style="max-width:200px;">
+
+  <!-- 11/25/25 D.Martin NEW: Google Custom Search (TABLE 0 #28) -->
+  <h2>Search Dodgers History Site</h2>
+  <form class="site-search" action="https://www.google.com/search" method="get" target="_blank">
+    <label for="q">Search this site via Google:</label><br>
+    <input type="text" id="q" name="q"
+           placeholder="Search Dodgers history topics">
+    <input type="hidden" name="sitesearch" value="(!!! YOUR_ULV_SITE_URL_WITHOUT_HTTP !!!)">
+    <button type="submit" class="btn">Search</button>
+  </form>
+</section>
+
+
+
+<footer class="site-footer">
+  &copy; <span id="year"></span> History of the Los Angeles Dodgers — Educational Project.
+  <br>
+  <!-- 11/25/25 D.Martin NEW: Best viewed note (TABLE 0 #17) -->
+  Best viewed in the latest versions of Chrome, Firefox, or Edge.
+  <br>
+  Contact: <a href="mailto:dartangion.martin@laverne.edu">dartangion.martin@laverne.edu</a> &amp; <a href="mailto:david.aguilar@laverne.edu">david.aguilar@laverne.edu</a>
+  <div class="footer-social">
+    <!-- 11/25/25 D.Martin NEW: Social media links (TABLE 0 #22) -->
+    Connect:
+    <a href="mailto:(!!! YOUR_EMAIL_HERE !!!)">Email</a>
+    <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://x.com/" target="_blank" rel="noopener">X (Twitter)</a>
+    <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</footer>
+
+
+</main>
+</body>
+</html>
